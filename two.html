@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topnav & Navbar</title>
+    <script src="https://kit.fontawesome.com/0d1b4df2b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="two.css">
+</head>
+<body>
+    <header>
+        <div class="topnavdiv"> 
+            <div class="topnavcontainer"> 
+                <div class="location"><i class="fas fa-map-marker"></i>Abu-halifa,Mahbula,kuwait</div>
+                <div class="phone"><i class="fas fa-phone-square"></i>(+965)-51268952</div>
+                <div class="work"><i class="fas fa-hospital"></i>Dar-al-shifa</div>
+                <div class="topnav-socialdiv">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fas fa-envelope-open-text"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp-square"></i></a>
+                    <a href="#"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <div class="navbar">
+                <i class="fas fa-bars"></i>
+                <a href="#" class="b-logo">mohammad <span>sr</span></a>
+                <div class="navlinks nav-container">
+
+                     <div class="s-title-box">
+                        <span class="s-title-logo">sr</span>
+                        <i class="fas fa-times"></i>
+                     </div>
+
+                     <ul class="links">
+                        <li><a href="#">HOME</a></li>
+
+                        <li><a href="#">HTML</a><i class="fas fa-angle-down arrow html-arrow"></i>
+                            <ul class="html-sub-menu sub-menu">
+                                <li><a href="#">html one</a></li>
+                                <li><a href="#">html two</a></li>
+                                <li class="more"><a href="#">More</a><i class="fas fa-angle-right arrow more-arrow"></i>
+                                    <ul class="more-sub-menu sub-menu">
+                                        <li><a href="#">more one</a></li>
+                                        <li><a href="#">more two</a></li>
+                                        <li><a href="#">more three</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                         </li>
+
+                         <li><a href="#">CSS</a><i class="fas fa-angle-down arrow css-arrow"></i> 
+
+                             <ul class="css-sub-menu sub-menu">
+                                <li><a href="#">css one</a></li>
+                                <li><a href="#">css one</a></li>
+                                <li><a href="#">css one</a></li>
+                            </ul> 
+                             
+                        </li>
+
+                        <li><a href="#">JAVASCRIPT</a></li>
+
+                        <li><a href="#">BOOTSTRAP</a></li>
+
+                        <li><a href="#">react.js</a></li>
+
+                        <li onclick="document.getElementById('id01').style.display='block'"  style="width:auto;"><a href="#">LogIn</a></li>
+
+                        
+                        <!-- form area -->
+                        <div class="modal" id="id01">
+                            <form action="#" class="modal-content animate" method="post"> 
+
+                                <div class="imgcontainer"> 
+                                    <span onclick="document.getElementById('id01').style.display='none'" class="close" style="width: auto;">&times;</span>
+                                    <img src="srlogo.jpg" alt="srlogo" class="avatar">
+                                </div>
+
+                               <div class="formcontainer"> 
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter yourname" name="name" repuired>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter yourpassword" name="psw" repuired>
+
+                                <button type="submit" class="login">Submit</button>
+
+                                <label >
+                                    <input  type="checkbox" checked="checked" name="remember">Remember me
+                                </label>
+                               </div>
+
+                               
+
+                               <div class="formcontainer" style="background-color: #f1f1f1;">
+                                  <button type="button"  onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                  <span class="psw">Forget <a href="#">Password</a></span>
+                              </div>
+
+                            </form>
+                        </div>
+
+                        <!-- form area -->
+
+
+                     </ul>
+
+                </div>
+
+                <div class="login-box">
+                    <i class="fas fa-search"></i>
+                    <div class="input-box">
+                        <input type="text" placeholder="search...">
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--!============== Home Section starts =============  -->
+
+     <section class="home" id="home">
+           <div class="home-container"> 
+            <div class="home-left"> 
+                <h1>
+                  Grow your skills and try again shin in your life.
+                </h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur 
+                  adipisicing elit. Incidunt repellat amet 
+                  nemo dicta tempore placeat suscipit quae 
+                  distinctio soluta laboriosam.
+                </p>
+
+                <a href="courses.html" class="abtn">Get started</a>
+         </div>
+
+         <div class="home-right"> 
+              <div class="home-right-img"> 
+                  <img src="hero-img.svg" alt="">
+              </div>
+         </div>
+           </div>
+     </section>
+     <!--!============== Home Section ends =============  -->
+
+     <!--! ============= Accordion section starts ==========  -->
+     <section id="aaccordion" class="aaccordion">
+        <div class="container">
+            <div class="aaccordion-title-div">
+                <span>accordion</span>
+                <h2>accordion</h2>
+            </div>
+                
+            <button class="accordion">
+                <div class="icon"></div>
+                <h5>Section 1</h5> 
+            </button>
+           <div class="panel parnel">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+
+          <button class="accordion">
+            <div class="icon"></div>
+            <h5>Section 1</h5> 
+        </button>
+           <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           </div>
+
+          <button class="accordion">
+            <div class="icon"></div>
+            <h5>Section 1</h5> 
+        </button>
+         <div class="panel">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        </div>
+
+     </section>
+     <!--! ============= Accordion section starts ==========  -->
+
+     <!--!============================== Flex Accordion section starts =================  -->
+       <section id="second-accordion" class="second-accordion"> 
+          <div class="second-acc-continer">
+             <div class="second-acc-con-df">
+                <div class="second-acc-leftdiv">
+                    <img src="hero-img.svg" alt="joker">
+                </div>
+                <div class="second-acc-rightdiv">
+                    <button class="sec-accordion">
+                        <h1>Life History</h1>
+                        <span><i class="fas fa-angle-down arrow s-a-arrow"></i></span>
+                    </button>
+                    <div class="second_acc_panel">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias vel atque voluptates quas eum, doloremque corporis quasi molestiae expedita.
+                    </div>
+
+                    <button class="sec-accordion">
+                        <h1>Life History</h1>
+                        <span><i class="fas fa-angle-down arrow s-a-arrow"></i></span>
+                    </button>
+                    <div class="second_acc_panel">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias vel atque voluptates quas eum, doloremque corporis quasi molestiae expedita.
+                    </div>
+
+                    <button class="sec-accordion">
+                        <h1>Life History</h1>
+                        <span><i class="fas fa-angle-down arrow s-a-arrow"></i></span>
+                    </button>
+                    <div class="second_acc_panel">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias vel atque voluptates quas eum, doloremque corporis quasi molestiae expedita.
+                    </div>
+
+                </div>
+             </div>
+          </div>
+       </section>
+     <!--!============================== Flex Accordion section ends =================  -->
+
+     <!--! ============================== Side show Gallary starts  =============================== -->
+           <section id="sideshow" class="sideshow"> 
+             <div class="sideshow-container">
+
+                <div class="side-show-title-div"> 
+                    <span>sideshow gallary</span>
+                    <h1>sideshow gallary</h1>
+                    <p>Learn how to create a responsive slideshow gallery with CSS and JavaScript.</p>
+                </div>
+
+                <div class="slideshow-con-div">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="1.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="2.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="1.jpg" style="width:100%">
+                      </div>
+
+
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="2.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="1.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="2.jpg" style="width:100%">
+                      </div>
+
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="1.jpg" style="width:100%">
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">❮</a>
+                      <a class="next" onclick="plusSlides(1)">❯</a>
+
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                    
+                      <div class="row">
+                        <div class="column">
+                          <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(0)" alt="The Woods">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(1)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Northern Lights">
+                        </div>
+                        <div class="column">
+                          <img class="demo cursor" src="1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Nature and sunrise">
+                        </div>    
+                        <div class="column">
+                          <img class="demo cursor" src="2.jpg" style="width:100%" onclick="currentSlide(5)" alt="Snowy Mountains">
+
+                </div>
+             </div>
+                          </section>
+     <!--! ============================== Side show Gallary ends  =============================== -->
+
+
+   <!--! ============================== personal life style TABS section starts  =============================== -->
+<section id="tab_section" class="tab_section"> 
+
+    <div class="tab_container"> 
+        <div class="tab_title_div"> 
+            <span>tabs</span>
+            <h1>tabs</h1>
+            <p>This is my part of life and background summary.</p>
+        </div>
+        <div class="tab_ele_box"> 
+          <div class="tab_links"> 
+            <button class="tablinks" onclick="openCity(event, 'Dhaka')" id="opendefault">Dhaka</button>
+            <button class="tablinks" onclick="openCity(event, 'London')" >London</button>
+            <button class="tablinks" onclick="openCity(event, 'Japan')" >Japan</button>
+          </div>
+           <div class="tab_tabcontent">
+
+             <div id="Dhaka" class="tabcontent"> 
+              <h3>Dhaka</h3>
+              <p>Dhaka is the capital city in Bangladesh</p>
+             </div>
+             
+             <div id="London" class="tabcontent"> 
+              <h3>London</h3>
+              <p>London is the capital city in England</p>
+             </div>
+
+             <div id="Japan" class="tabcontent"> 
+              <h3>Tokeyo</h3>
+              <p>Tokeyo is the capital city in Japan</p>
+             </div>
+
+           </div>
+        </div>
+    </div>
+</section>
+   <!--! ============================== personal life style TABS section ends  =============================== -->
+
+ <!--! ==== personal life style TABS section starts  =============== -->
+ <section id="v_t_s" class="v_t_s">
+
+   <div class="v_t_s-container">
+
+     <div class="v_t_s_title-div">
+       <img src="title.png" alt="png">
+       <h1>Horizontal-tabs</h1>
+     </div>
+
+     <div class="v_t_s_ele_div">
+
+      <div class="v_t_s_left">
+          <!-- <img src="tabs.png alt="png" class="shape"> -->
+          <img src="hero-img.png" alt="png" class="girl">
+      </div>
+
+      <div class="v_t_s_right">
+              <h1 class="h1h">Sohel Rana</h1>
+              <p class="ph1">Personal info by horizontal tab</p>
+              <button class="ttablinks" onclick="closeCity(event, 'life')" id="autoOpen">Life history</button>
+              <button class="ttablinks" onclick="closeCity(event, 'skills')">skills</button>
+              <button class="ttablinks" onclick="closeCity(event, 'work')">work demo</button>
+
+               <div class="content-ele-div">
+                <div id="life" class="ttabcontent">
+                  <h1>Hello World</h1>
+                  <p>This is sohel rana and he is a full stack web developer</p>
+                 </div>
+  
+                 
+                 <div id="skills" class="ttabcontent">
+                  <h1 class="h1li">Known as languaes:</h1>
+                  <li>Html</li>
+                  <li>css</li>
+                  <li>Bootstrap</li>
+                  <li>JavaScript</li>
+                  <li>React js</li>
+                 </div>
+  
+                 
+                 <div id="work" class="ttabcontent">
+                  <h1>Check my work demo:</h1>
+                  <img src="joker.png" alt="png">
+                 </div>
+  
+               </div>
+      </div>
+     </div>
+   </div>
+ </section>
+  <!--! ==== personal life style TABS section ends  =============== -->
+
+
+
+ <script src="two.js"></script>   
+</body>
+</html>
